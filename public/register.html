@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="./assets/js/init-alpine.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer></script>
+    <script src="./assets/js/charts-lines.js" defer></script>
+    <script src="./assets/js/charts-pie.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex items-center min-h-screen p-6 bg-gray-50 dark:bg-gray-900">
+        <div class="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-900">
+            <div class="flex flex-col overflow-y-auto md:flex-row">
+                <div class="h-32 md:h-auto md:w-1/2">
+                    <img aria-hidden="true" class="object-cover w-full h-full dark:hidden "
+                        src="https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGRvY3RvciUyMGFuZCUyMHBhdGllbnR8ZW58MHx8MHx8fDA%3D"
+                        alt="Office" />
+                    <img aria-hidden="true" class="hidden object-cover w-full h-full dark:block"
+                        src="../assets/img/login-office-dark.jpeg" alt="Office" />
+                </div>
+                <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+                    <div class="w-full">
+                        <h1 class="mb-4 text-5xl font-semibold text-gray-700 dark:text-gray-200">
+                            Đăng ký
+                        </h1>
+
+                        <label class="block text-sm mt-3">
+                            <span class="text-gray-700 dark:text-gray-400">Họ tên</span>
+                            <input
+                                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                placeholder="Jane Doe" />
+                        </label>
+
+                        <div class="text-sm mt-5 inline-flex justify-between w-64">
+                            <label class="text-gray-700 dark:text-gray">Giới tính</label>
+                            <div>
+                                <input type="radio" name="gender" id="male" class="radio w-4 h-4" value="Nam">
+                                <span>Nam</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="female" class="radio w-4 h-4" value="Nữ">
+                                <span>Nữ</span>
+                            </div>
+                        </div>
+
+                        <label class="block text-sm mt-3">
+                            <span class="text-gray-700 dark:text-gray-400">Email / Số điện thoại</span>
+                            <input
+                                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                placeholder="Jane Doe" />
+                        </label>
+
+                        <label class="block text-sm mt-3">
+                            <span class="text-gray-700 dark:text-gray-400">Địa chỉ</span>
+                            <input
+                                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                placeholder="Address" />
+                        </label>
+
+                        <label class="block mt-3 text-sm">
+                            <span class="text-gray-700 dark:text-gray-400">Mật khẩu</span>
+                            <input
+                                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                placeholder="***************" type="password" />
+                        </label>
+
+                        <!-- You should use a button here, as the anchor is only used for the example  -->
+                        <a class="block w-full px-4 py-3 mt-4 text-sm font-medium leading-5 text-center text-white bg-green-500 hover:bg-green-600"
+                            href="register.html">
+                            Đăng ký
+                    </a>
+                    <hr class="my-4">
+
+                        <a class="block w-full px-4 py-3 mt-4 text-sm font-medium leading-5 text-center text-white bg-blue-500 hover:bg-blue-600"
+                            href="login.html">
+                            Đăng nhập
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
